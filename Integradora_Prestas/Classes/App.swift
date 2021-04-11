@@ -8,6 +8,10 @@
 
 import UIKit
 
-class App: NSObject {
+class App: NSObject{
+    static let shared = App()
+    var NewUser = User("", "")
+    
+
 
 }

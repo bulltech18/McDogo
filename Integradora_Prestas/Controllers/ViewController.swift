@@ -13,12 +13,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var btn_sesion: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        btn_sesion.round()
     }
+   
 
     @IBAction func IniciarSesion(_ sender: UIButton) {
         
     }
+    
     
 }
 

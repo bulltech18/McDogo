@@ -9,5 +9,12 @@
 import UIKit
 
 class User: Codable {
+    var username: String
+    var pwd: String
+    
+    init(_ username:String, _ pwd:String){
+        self.username = username
+        self.pwd = pwd
+    }
     
 }
