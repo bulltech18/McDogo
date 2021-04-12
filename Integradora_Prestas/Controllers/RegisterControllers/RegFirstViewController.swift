@@ -26,7 +26,7 @@ class RegFirstViewController: UIViewController {
     }
     
     @IBAction func NextBtn(_ sender: UIButton) {
-        if !tf_usuario.text!.isEmpty || !tf_contraseña.text!.isEmpty || !tf_confirmacion.text!.isEmpty{
+        if !tf_usuario.text!.isEmpty && !tf_contraseña.text!.isEmpty && !tf_confirmacion.text!.isEmpty{
             if tf_contraseña.text!==tf_confirmacion.text!{
                 App.shared.NewUser.username = tf_usuario.text!
                 App.shared.NewUser.pwd = tf_contraseña.text!

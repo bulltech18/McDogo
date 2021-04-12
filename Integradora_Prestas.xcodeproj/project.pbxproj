@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,13 +18,18 @@
 		288C029726090622008B5BDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288C029526090622008B5BDC /* Main.storyboard */; };
 		288C02992609062B008B5BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 288C02982609062B008B5BDC /* Assets.xcassets */; };
 		288C029C2609062B008B5BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288C029A2609062B008B5BDC /* LaunchScreen.storyboard */; };
+		7F26EAD22623D709004D589B /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26EAD12623D709004D589B /* Pet.swift */; };
+		7F26EAD9262495F5004D589B /* RegNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26EAD8262495F5004D589B /* RegNavViewController.swift */; };
 		7F740D0B260E5A34007B3240 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F740D0A260E5A34007B3240 /* RegisterViewController.swift */; };
 		7F740D0F2610130D007B3240 /* RegFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F740D0E2610130D007B3240 /* RegFirstViewController.swift */; };
 		7F740D122610132A007B3240 /* RegTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F740D112610132A007B3240 /* RegTwoViewController.swift */; };
 		7F740D1826122E1D007B3240 /* Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F740D1726122E1D007B3240 /* Extensiones.swift */; };
+		A2E8CBE997B1901B5D1A228F /* Pods_Integradora_Prestas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006555A910286F543390381D /* Pods_Integradora_Prestas.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		006555A910286F543390381D /* Pods_Integradora_Prestas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Integradora_Prestas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D1119B830920521243577C /* Pods-Integradora_Prestas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Integradora_Prestas.debug.xcconfig"; path = "Target Support Files/Pods-Integradora_Prestas/Pods-Integradora_Prestas.debug.xcconfig"; sourceTree = "<group>"; };
 		28200089260A708A0097ED1B /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		2820008E260A711A0097ED1B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		28200090260A73D80097ED1B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -38,10 +43,13 @@
 		288C02982609062B008B5BDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		288C029B2609062B008B5BDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		288C029D2609062B008B5BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F26EAD12623D709004D589B /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		7F26EAD8262495F5004D589B /* RegNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegNavViewController.swift; sourceTree = "<group>"; };
 		7F740D0A260E5A34007B3240 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7F740D0E2610130D007B3240 /* RegFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegFirstViewController.swift; sourceTree = "<group>"; };
 		7F740D112610132A007B3240 /* RegTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegTwoViewController.swift; sourceTree = "<group>"; };
 		7F740D1726122E1D007B3240 /* Extensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensiones.swift; sourceTree = "<group>"; };
+		8323DD8AFC58AE6C5DDDE258 /* Pods-Integradora_Prestas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Integradora_Prestas.release.xcconfig"; path = "Target Support Files/Pods-Integradora_Prestas/Pods-Integradora_Prestas.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E8CBE997B1901B5D1A228F /* Pods_Integradora_Prestas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +82,7 @@
 			children = (
 				28200089260A708A0097ED1B /* App.swift */,
 				2820008E260A711A0097ED1B /* User.swift */,
+				7F26EAD12623D709004D589B /* Pet.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -82,6 +92,8 @@
 			children = (
 				288C028E26090622008B5BDC /* Integradora_Prestas */,
 				288C028D26090622008B5BDC /* Products */,
+				DA930F9FD811C458A8D564D7 /* Pods */,
+				88B985AD2CA9C9A0DFE8E5AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +126,7 @@
 			children = (
 				7F740D0E2610130D007B3240 /* RegFirstViewController.swift */,
 				7F740D112610132A007B3240 /* RegTwoViewController.swift */,
+				7F26EAD8262495F5004D589B /* RegNavViewController.swift */,
 			);
 			path = RegisterControllers;
 			sourceTree = "<group>";
@@ -126,6 +139,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		88B985AD2CA9C9A0DFE8E5AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006555A910286F543390381D /* Pods_Integradora_Prestas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA930F9FD811C458A8D564D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19D1119B830920521243577C /* Pods-Integradora_Prestas.debug.xcconfig */,
+				8323DD8AFC58AE6C5DDDE258 /* Pods-Integradora_Prestas.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 288C02A02609062B008B5BDC /* Build configuration list for PBXNativeTarget "Integradora_Prestas" */;
 			buildPhases = (
+				87CD84A6B339066A8C12FC7F /* [CP] Check Pods Manifest.lock */,
 				288C028826090622008B5BDC /* Sources */,
 				288C028926090622008B5BDC /* Frameworks */,
 				288C028A26090622008B5BDC /* Resources */,
+				69B8EE411AA46F4AD5044CCF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +224,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		69B8EE411AA46F4AD5044CCF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Integradora_Prestas/Pods-Integradora_Prestas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Integradora_Prestas/Pods-Integradora_Prestas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Integradora_Prestas/Pods-Integradora_Prestas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87CD84A6B339066A8C12FC7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Integradora_Prestas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		288C028826090622008B5BDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -204,10 +278,12 @@
 				7F740D0F2610130D007B3240 /* RegFirstViewController.swift in Sources */,
 				2820008A260A708A0097ED1B /* App.swift in Sources */,
 				2820008F260A711A0097ED1B /* User.swift in Sources */,
+				7F26EAD9262495F5004D589B /* RegNavViewController.swift in Sources */,
 				288C029226090622008B5BDC /* SceneDelegate.swift in Sources */,
 				7F740D122610132A007B3240 /* RegTwoViewController.swift in Sources */,
 				7F740D1826122E1D007B3240 /* Extensiones.swift in Sources */,
 				28200095260A747A0097ED1B /* ProfileViewController.swift in Sources */,
+				7F26EAD22623D709004D589B /* Pet.swift in Sources */,
 				28200091260A73D80097ED1B /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +426,7 @@
 		};
 		288C02A12609062B008B5BDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19D1119B830920521243577C /* Pods-Integradora_Prestas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -367,6 +444,7 @@
 		};
 		288C02A22609062B008B5BDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8323DD8AFC58AE6C5DDDE258 /* Pods-Integradora_Prestas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

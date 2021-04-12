@@ -10,12 +10,16 @@ import UIKit
 
 class RegTwoViewController: UIViewController {
 
+    @IBOutlet weak var tf_mascota: UITextField!
     @IBOutlet weak var btn_register: UIButton!
+    @IBOutlet weak var DogImage: UIImageView!
+    @IBOutlet weak var btn_escoger: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         btn_register.round()
-        
+        btn_escoger.round()
+    
         // Do any additional setup after loading the view.
     }
     
@@ -23,14 +27,29 @@ class RegTwoViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func didTapButton(_ sender: UIButton) {
+        let vc = UIImagePickerController()
+        vc.sourceType = .photoLibrary
+        vc.delegate = self
+        vc.allowsEditing = true
+        present(vc, animated: true)
     }
-    */
-
+    
+    @IBAction func Registrar(_ sender: UIButton) {
+        
+    }
+    
+}
+extension RegTwoViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage{
+            DogImage.image = image
+            
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
 }
