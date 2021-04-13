@@ -11,7 +11,6 @@ import UIKit
 class App: NSObject{
     static let shared = App()
     var NewUser = User("", "")
-    
-
-
+    var LoggedUser = User("", "")
+    var API = "http://127.0.0.1:3333/"
 }

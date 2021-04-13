@@ -22,8 +22,9 @@ class ViewController: UIViewController {
     @IBAction func IniciarSesion(_ sender: UIButton) {
         if !tf_usuario.text!.isEmpty && !tf_contraseña.text!.isEmpty{
             print("Inicio de sesion exitoso")
-        }else{
+            self.performSegue(withIdentifier: "HomeSegue", sender: nil)
             
+        }else{
             alertDefault(with: "Datos Requeridos", andWithMsg: "Asegurate de llenar todos los campos")
         }
     }
