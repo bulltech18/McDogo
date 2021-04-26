@@ -8,6 +8,15 @@
 
 import UIKit
 
+extension UIView{
+    func roundView(){
+        self.layer.masksToBounds = true
+        self.layer.cornerRadius = self.bounds.width / 2
+    }
+    func roundBit(){
+        self.layer.cornerRadius = bounds.height / 2
+    }
+}
 extension UIButton {
     func round(){
         layer.cornerRadius = bounds.height / 2

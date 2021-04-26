@@ -11,6 +11,9 @@ import UIKit
 class App: NSObject{
     static let shared = App()
     var NewUser = User("", "")
+    var NewPet = Pet("")
     var LoggedUser = User("", "")
-    var API = "http://127.0.0.1:3333/"
+    var API = "http://3.18.112.81/"
+    var token = ""
+    var Image = UIImage(named: "image")
 }

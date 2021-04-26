@@ -20,6 +20,11 @@
 		288C029C2609062B008B5BDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 288C029A2609062B008B5BDC /* LaunchScreen.storyboard */; };
 		7F26EAD22623D709004D589B /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26EAD12623D709004D589B /* Pet.swift */; };
 		7F26EAD9262495F5004D589B /* RegNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F26EAD8262495F5004D589B /* RegNavViewController.swift */; };
+		7F509B11262CDECC005CB6B9 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F509B10262CDECC005CB6B9 /* ScannerViewController.swift */; };
+		7F509B14262CF6E4005CB6B9 /* Dispensador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F509B13262CF6E4005CB6B9 /* Dispensador.swift */; };
+		7F5D9690262E29E9002F8133 /* CroquetasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5D968F262E29E9002F8133 /* CroquetasViewController.swift */; };
+		7F5D9693262E3E18002F8133 /* AguaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5D9692262E3E18002F8133 /* AguaViewController.swift */; };
+		7F6AF7DA2626745A008338BB /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6AF7D92626745A008338BB /* Auth.swift */; };
 		7F740D0B260E5A34007B3240 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F740D0A260E5A34007B3240 /* RegisterViewController.swift */; };
 		7F740D0F2610130D007B3240 /* RegFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F740D0E2610130D007B3240 /* RegFirstViewController.swift */; };
 		7F740D122610132A007B3240 /* RegTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F740D112610132A007B3240 /* RegTwoViewController.swift */; };
@@ -45,6 +50,11 @@
 		288C029D2609062B008B5BDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F26EAD12623D709004D589B /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		7F26EAD8262495F5004D589B /* RegNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegNavViewController.swift; sourceTree = "<group>"; };
+		7F509B10262CDECC005CB6B9 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		7F509B13262CF6E4005CB6B9 /* Dispensador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispensador.swift; sourceTree = "<group>"; };
+		7F5D968F262E29E9002F8133 /* CroquetasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CroquetasViewController.swift; sourceTree = "<group>"; };
+		7F5D9692262E3E18002F8133 /* AguaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AguaViewController.swift; sourceTree = "<group>"; };
+		7F6AF7D92626745A008338BB /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		7F740D0A260E5A34007B3240 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7F740D0E2610130D007B3240 /* RegFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegFirstViewController.swift; sourceTree = "<group>"; };
 		7F740D112610132A007B3240 /* RegTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegTwoViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +83,9 @@
 				28200092260A744C0097ED1B /* DispensersViewController.swift */,
 				28200094260A747A0097ED1B /* ProfileViewController.swift */,
 				7F740D1426101345007B3240 /* RegisterControllers */,
+				7F509B10262CDECC005CB6B9 /* ScannerViewController.swift */,
+				7F5D968F262E29E9002F8133 /* CroquetasViewController.swift */,
+				7F5D9692262E3E18002F8133 /* AguaViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -83,6 +96,8 @@
 				28200089260A708A0097ED1B /* App.swift */,
 				2820008E260A711A0097ED1B /* User.swift */,
 				7F26EAD12623D709004D589B /* Pet.swift */,
+				7F6AF7D92626745A008338BB /* Auth.swift */,
+				7F509B13262CF6E4005CB6B9 /* Dispensador.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -273,18 +288,23 @@
 			files = (
 				7F740D0B260E5A34007B3240 /* RegisterViewController.swift in Sources */,
 				28200093260A744C0097ED1B /* DispensersViewController.swift in Sources */,
+				7F5D9693262E3E18002F8133 /* AguaViewController.swift in Sources */,
 				288C029426090622008B5BDC /* ViewController.swift in Sources */,
 				288C029026090622008B5BDC /* AppDelegate.swift in Sources */,
 				7F740D0F2610130D007B3240 /* RegFirstViewController.swift in Sources */,
+				7F6AF7DA2626745A008338BB /* Auth.swift in Sources */,
 				2820008A260A708A0097ED1B /* App.swift in Sources */,
 				2820008F260A711A0097ED1B /* User.swift in Sources */,
 				7F26EAD9262495F5004D589B /* RegNavViewController.swift in Sources */,
 				288C029226090622008B5BDC /* SceneDelegate.swift in Sources */,
 				7F740D122610132A007B3240 /* RegTwoViewController.swift in Sources */,
+				7F509B14262CF6E4005CB6B9 /* Dispensador.swift in Sources */,
+				7F5D9690262E29E9002F8133 /* CroquetasViewController.swift in Sources */,
 				7F740D1826122E1D007B3240 /* Extensiones.swift in Sources */,
 				28200095260A747A0097ED1B /* ProfileViewController.swift in Sources */,
 				7F26EAD22623D709004D589B /* Pet.swift in Sources */,
 				28200091260A73D80097ED1B /* HomeViewController.swift in Sources */,
+				7F509B11262CDECC005CB6B9 /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

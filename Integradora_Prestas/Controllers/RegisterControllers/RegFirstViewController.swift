@@ -30,6 +30,9 @@ class RegFirstViewController: UIViewController {
             if tf_contraseña.text!==tf_confirmacion.text!{
                 App.shared.NewUser.username = tf_usuario.text!
                 App.shared.NewUser.pwd = tf_contraseña.text!
+                App.shared.LoggedUser.username = tf_usuario.text!
+                App.shared.LoggedUser.pwd = tf_contraseña.text!
+                App.shared.NewUser.registrarUsuario(self)
             }else{
                 alertDefault(with: "Contraseña Incorrecta", andWithMsg: "Asegurate que las contraseñas coincidan")
             }

@@ -18,11 +18,18 @@ class ViewController: UIViewController {
         btn_sesion.round()
     }
    
+    override func viewWillAppear(_ animated: Bool) {
+        tf_usuario.text = ""
+        tf_contraseña.text = ""
+    }
 
     @IBAction func IniciarSesion(_ sender: UIButton) {
         if !tf_usuario.text!.isEmpty && !tf_contraseña.text!.isEmpty{
-            print("Inicio de sesion exitoso")
-            self.performSegue(withIdentifier: "HomeSegue", sender: nil)
+            App.shared.LoggedUser.username =  tf_usuario.text!
+            App.shared.LoggedUser.pwd = tf_contraseña.text!
+            let vc = self
+            App.shared.LoggedUser.login(vc)
+            
             
         }else{
             alertDefault(with: "Datos Requeridos", andWithMsg: "Asegurate de llenar todos los campos")
@@ -31,6 +38,9 @@ class ViewController: UIViewController {
     
     @IBAction func CrearCuenta(_ sender: UIButton) {
         self.performSegue(withIdentifier: "RegisterSegue", sender: nil)
+    }
+    @IBAction func unwind( _ seg: UIStoryboardSegue) {
+        
     }
     
 }

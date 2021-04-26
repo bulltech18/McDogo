@@ -7,15 +7,55 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var lbl_dispensadores: UILabel!
+    @IBOutlet weak var lbl_usuario: UILabel!
+    @IBOutlet weak var btn_detalles: UIButton!
+    
+    @IBOutlet weak var userImg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        lbl_usuario.text=App.shared.LoggedUser.username
+        btn_detalles.round()
+        App.shared.NewPet.getImage(userImg)
+        getDispensa()
+       
 
-        // Do any additional setup after loading the view.
+        
+        
+    }
+    func getDispensa(){
+        AF.request(App.shared.API+"usuarios/getdispensa", method: .get, parameters: ["token":App.shared.token]).responseData{ (response) in
+            do {
+                guard let data = response.value else { return }
+                let decoder = JSONDecoder()
+                let disp = try decoder.decode(Dispensador.self, from: data)
+                if disp.data.isEmpty{
+                    
+                    self.lbl_dispensadores.text! = "\(0)"
+                    
+                }else{
+                    self.lbl_dispensadores.text! = "\(1)"
+                    
+                }
+              
+                
+            }catch {
+                self.lbl_dispensadores.text! = "\(1)"
+                print("Error en la serializacion \(error):")
+               
+             
+            }
+        }
+        
+        
     }
     
+}
 
     /*
     // MARK: - Navigation
@@ -27,4 +67,4 @@ class HomeViewController: UIViewController {
     }
     */
 
-}
+

@@ -37,15 +37,21 @@ class RegTwoViewController: UIViewController {
     }
     
     @IBAction func Registrar(_ sender: UIButton) {
-        App.shared.NewUser.registrarUsuario()
+        if DogImage.image != nil{
+            if !tf_mascota.text!.isEmpty{
+                App.shared.NewPet.name = tf_mascota.text!
+                let image = DogImage.image!
+                App.shared.NewPet.registarPerrito(image: image, vc: self)
+                
+            }else{
+                self.alertDefault(with: "Complete los campos", andWithMsg: "Todos los campos necesitan estar completados")
+            }
+        }else{
+            self.alertDefault(with: "Complete los campos", andWithMsg: "Todos los campos necesitan estar completados")
+        }
+       
         
     }
-    func request(){
-        AF.request("http://127.0.0.1:3333/registrar",method: .post, parameters: ["usuario":App.shared.NewUser.username,"password":App.shared.NewUser.pwd], encoding: JSONEncoding.default).responseJSON{(response) -> Void in
-               
-           }
-    }
-    
 }
 extension RegTwoViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate{
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
